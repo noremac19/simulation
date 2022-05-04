@@ -17,7 +17,7 @@ pip install cryptocompare
 ## Run
 
 ```bash
-python simulation.py
+python sim.py
 ```
 
 ## Configurations
