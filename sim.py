@@ -193,9 +193,9 @@ def tracker():
 # @return breakeven 
 def breakeven(option):
     if option.type == "Call":
-        return option.strike + option.premium
+        return option.strike + (option.premium/option.amount)
     else:
-        return option.strike - option.premium
+        return option.strike - (option.premium/option.amount)
 
 
 
