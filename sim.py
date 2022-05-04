@@ -181,9 +181,12 @@ def tracker():
     
     term = data.iloc[i:j,:]
     #term = term.reset_index(drop=True)
-    term['Difference'] = term['Price'].apply(lambda x: x - b)
-    
-    return term
+    if option.type == "Call":
+        term['Difference'] = term['Price'].apply(lambda x: x - b)
+        return term
+    else:
+        term['Difference'] = term['Price'].apply(lambda x: b - x)
+        return term
 
 # @notice calculate the breakeven of an option
 # @param option object
