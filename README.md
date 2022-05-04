@@ -23,7 +23,10 @@ python sim.py
 ## Configurations
 
 ```python
-IVbase = get_ActualIVRate(127) # change the parameter to the current premium for one ETH call option
+amount = 1 # line 152, this can be changed if you want a different ETH amount for the option
+period = 7 # line 153, this can be changed if you want a different period for the option
+x = r.randint(0,1) # line 155, this can be changed if you want to set the option to 
+		  # either a call (0) or a put (1)
 ```
 
 ## Contributing
