@@ -55,7 +55,7 @@ def percent(c,e):
 # @param input parameters for the API
 # @return a json object that contains all the ETH info
 def run_query(query):  # A simple function to use requests.post to make the API call.
-    headers = {'X-API-KEY': 'BQYYquuv9iE4tUkIy1vo381YcGGrK5y2'}
+    headers = {'X-API-KEY': '#'}
     request = requests.post('https://graphql.bitquery.io/',
                             json={'query': query}, headers=headers)
     if request.status_code == 200:
