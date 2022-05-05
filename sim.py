@@ -95,7 +95,7 @@ def getHistoricalETH():
 
 # @return the current ETH price
 def get_eth_price():
-    cc.cryptocompare._set_api_key_parameter('a44fde92b0792cb721cdf11fdb772c92ba529257d9a7a73688d0a87dc10fb4f7')
+    cc.cryptocompare._set_api_key_parameter('#')
     p = cc.get_price('ETH',currency='USD')
     return p['ETH']['USD']
  
